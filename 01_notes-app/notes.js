@@ -14,6 +14,10 @@ const addNote = (title, body) => {
     // Ensure no duplicate title is added, log an error if an attempt is made for it
     // Unlike filter function, find function stops when it finds one matching element
     let duplicateNote = notes.find((note) => note.title === title)
+
+    // Using debugger and node inspect tool
+    debugger
+
     if (!duplicateNote) {   // same as if(duplicateNote === undefined)
         notes.push({
             title: title,
