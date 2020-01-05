@@ -1,5 +1,3 @@
-console.log('Client side JavaScript file is loaded!')
-
 // Let's grab the form element from HTML file that embeds this client side JavaScript
 const weatherForm = document.querySelector('form')
 const searchInput = document.querySelector('input')
