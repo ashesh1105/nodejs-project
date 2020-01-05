@@ -10,7 +10,10 @@ const geocode = require('./utils/geocode')
 const weather = require('./utils/weather')
 
 const log = console.log
-const port = 5555
+// const port = 5555    // Don't use port numer when deploying to Heroku! Heroku sets their own
+// This helps Heroku to set port everytime dynamically. || helps to run same file locally,
+// meaning when process.env.PORT is undefined, 5555 is assigned to port variable, use it locally!
+const port = process.env.PORT || 5555
 
 // Define paths (express configs)
 const publicDirectoryPath = path.join(__dirname, '../public')   // For static contents like images, css

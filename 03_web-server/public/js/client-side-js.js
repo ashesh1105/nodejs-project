@@ -13,7 +13,7 @@ weatherForm.addEventListener('submit', (e) => {
 
     // Extract user input from search input text box and form the URL to be sent to Weather API
     let location = searchInput.value
-    let baseUrl = 'http://localhost:5555/weather'
+    let baseUrl = '/weather'
     let url = baseUrl + '?address=' + location
 
     // Clear other placeholders and show 'Loading...' on first one till data gets fetched
