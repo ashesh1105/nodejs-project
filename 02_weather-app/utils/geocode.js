@@ -9,7 +9,7 @@ const geocode = (address, callback) => {  // vicinity could be state, may be
 
     request({ url: geoCodeUrl, json: true }, (error, response) => {
         if (error) {
-            callback('Error connecting to Weather Service!', undefine)
+            callback('Error connecting to Weather Service!', undefined)
         } else if (response.body.error || response.body.features.length === 0) {
             callback('Unable to find location! Try another search!')
         } else {
